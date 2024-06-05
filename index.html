@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar-header">
+        <section class="header-title-line">
+            <h1>HTML Documentation</h1>
+            <button class="menu-button">
+                <span class="menu-icon"></span>
+            </button>
+        </section>
+
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#intro">Introduction to HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#head">Head Tags</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#text">Text Basics</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#lists">Lists</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#links">Links</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#images">Images</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#semantics">Semantics</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#tables">Tables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#forms">Forms and Inputs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-doc" id="main-doc">
+        <section class="main-section" id="intro">
+            <header>
+                <h2>Introduction to HTML</h2>
+            </header>
+            <ul>
+                <li>
+                    HTML (HyperText Markup Language) is the fundamental building component of the web. It describes the
+                    meaning and organization of web content.
+                </li>
+                <li>
+                    The term "hypertext" refers to linkages that connect web pages together, either within or between
+                    websites.
+                </li>
+                <li>
+                    HTML uses "markup" to annotate text, images, and other content that will be shown in a Web browser.
+                    HTML markup comprises specific "elements" such as <code>&lt;head&gt;</code>,
+                    <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code>,
+                    <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>,
+                    <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code> and many more.
+                </li>
+                <li>
+                    HTML elements are distinguished from other text in a document by "tags" that include the element
+                    name surrounded by "<code>&lt;</code>" and "<code>&gt;</code>". The name of an element inside a tag
+                    is case insensitive. That
+                    is, it can be written in capital, lowercase, or both. For instance, the <code>&lt;title&gt;</code>
+                    tag can be
+                    typed as <code>&lt;Title&gt;</code>, <code>&lt;TITLE&gt;</code>, or any other variation. The
+                    standard and suggested practice
+                    is to write tags in lowercase.
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="head">
+            <header>
+                <h2>Head Tags</h2>
+            </header>
+            <p>
+                The Head section of an HTML document contains metadata about the document, such as the author,
+                description, and links to CSS or JavaScript files that should be used with the HTML.
+            </p>
+            <p>
+                The head of an HTML document is the portion of the page that does not appear in the web browser when it
+                is loaded. It provides information such as the page <code>&lt;title&gt;</code>, links to CSS (if you
+                choose to design
+                your HTML content with CSS), links to custom favicons, and other metadata. Web browsers use the
+                information in the head to accurately render the HTML document. In this post, we'll go over everything
+                mentioned above and more to provide you with a solid foundation for working with markup.
+            </p>
+            <p>
+                The <code>&lt;title&gt;</code> element specifies the title of the HTML document, not its content.
+            </p>
+            <p>
+                Metadata is data that describes data. The <code>&lt;meta&gt;</code> element is the "official" way to add
+                metadat covered in this article could be considered metadata as well. There are several types of
+                <code>&lt;meta&gt;</code> components that can be included in your page's <code>&lt;head&gt;</code>, but
+                we won't try to discuss them all here as it would be too confusing. Instead, we'll explain afew common
+                items to give you an idea.
+            </p>
+            <ul>
+                <li>
+                    The <code>&lt;meta charset="utf-8"&gt;</code> element provides the document's character encoding,
+                    which
+                    determines the character set it can use. utf-8 is a universal character set that contains almost
+                    every character from each human language. This indicates that your web page will be able to display
+                    any language; therefore, it is a good idea to include this option on every web page you make!
+                </li>
+                <li>
+                    Many <code>&lt;meta&gt;</code> elements have name and content properties. The name indicates the
+                    type of meta
+                    element and the sort of information it contains. Specifying an author using the name attribute is
+                    important in a variety of reasons, including understanding who produced the page and contacting them
+                    if you have any questions about the content. Some content management systems have the ability to
+                    automatically extract page author information and make it available for these uses.Meanwhile,
+                    content refers to the actual meta content. Using the content attribute to provide a description that
+                    incorporates keywords related to the content of your website is beneficial since it has the
+                    potential to have your page appear higher in relevant searches made in search engines (such actions
+                    are known as Search Engine Optimization, or SEO).
+                </li>
+                <li>
+                    To enhance your site design, you can include references to custom icons in your metadata, which will
+                    be displayed in specific scenarios. The favicon (short for "favorites icon", referring to its use in
+                    browser "favorites" or "bookmarks" lists) is the most ubiquitous of these.
+                </li>
+            </ul>
+            <p>
+                Always place the <code>&lt;link&gt;</code> element in the document's head section. This accepts two
+                attributes:
+                rel="stylesheet", which indicates that it is the document's stylesheet, and href, which contains the
+                path of the stylesheet file.
+            </p>
+            <p>
+                Finally, it's worth noting that you can (and should) specify the language of your page. This can be
+                accomplished by including the lang attribute with the beginning HTML tag.
+            </p>
+        </section>
+        <section class="main-section" id="text">
+            <header>
+                <h2>Text Basics</h2>
+            </header>
+            <p>
+                The HTML elements <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> represent six levels of
+                section headings. <code>&lt;h1&gt;</code> is
+                the highest section level, while <code>&lt;h6&gt;</code> is the lowest. By default, all heading elements
+                produce a
+                block-level box in the layout, beginning on a new line and taking up the whole width of their contained
+                block.
+            </p>
+            <p>
+                Users of screen reading software frequently go from heading to heading to discover the page's content.
+                Because of this, it is critical not to skip one or more heading levels. Doing so may cause confusion
+                because the individual navigating this way may be left wondering where the missing heading is.
+            </p>
+            <p>
+                Headings can be nested as subsections to better organize the page's content. Most screen readers can
+                also provide an ordered list of all the headings on a page, helping a person rapidly determine the
+                hierarchy of the material.
+            </p>
+            <p>
+                The <code>&lt;p&gt;</code> HTML element denotes a paragraph. Paragraphs are typically portrayed in
+                visual media as
+                blocks of text separated from neighboring blocks by blank lines and/or first-line indentation; however,
+                HTML paragraphs can be any structural grouping of related material, such as photos or form fields.
+            </p>
+            <p>
+                The <code>&lt;hr&gt;</code> HTML element indicates a thematic break between paragraph-level components,
+                such as a
+                change of scene or topic within a section.
+            </p>
+            <p>
+                The <code>&lt;br&gt;</code> HTML element creates a line break in text (carriage return). It is useful
+                when composing
+                a poem or an address with major line breaks.
+            </p>
+            <p>Block-level Element vs. Inline-level Element</p>
+            <ul>
+                <li>
+                    A block-level element always begins with a new line. In horizontal writing modes like as English or
+                    Arabic, it takes up the entire horizontal space of its parent element (container) and a vertical
+                    space equal to the height of its contents, resulting in a "block".
+                </li>
+                <li>
+                    Most text sequences, replacement elements, and created material are inline by default.
+
+                    Inline layout divides a mixed stream of text, replacement elements, and other inline boxes into a
+                    stack of line boxes. Within each line box, inline-level boxes are vertically or horizontally
+                    aligned, depending on the writing style. They are often aligned by their text's baselines.
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;em&gt;</code> HTML element shows text with stress intensity. The <code>&lt;em&gt;</code>
+                element can be nested, with
+                each level expressing a higher degree of emphasis.
+            </p>
+            <p>
+                The <code>&lt;strong&gt;</code> HTML element conveys significant importance, seriousness, or urgency.
+                Browsers often
+                display the material in bold type.
+            </p>
+            <p>
+                Some special characters are reserved for usage in HTML, so your browser will interpret them as HTML
+                code. If you use the less-than (<code>&lt;</code>) sign, the browser interprets any text after it as a
+                tag.
+
+                To show these characters as text, replace them with the relevant character entities, such as
+                <code>&amp;nbsp;</code>,
+                <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;copy;</code>, and others.
+            </p>
+            <p>
+                The <code>&lt;abbr&gt;</code> HTML element indicates an abbreviation or acronym. When using an
+                abbreviation or
+                acronym, include a complete extension of the phrase in plain text on the first use, along with the
+                <code>&lt;abbr&gt;</code> tag to denote the abbreviation. This tells the user what an abbreviation or
+                acronym
+                implies. When the abbreviation or acronym does not have a full extension, the optional title attribute
+                can supply one. This gives user agents a guideline on how to announce/display the information while also
+                telling all users about the abbreviation. If present, the title must include this entire description and
+                nothing else.
+            </p>
+            <p>
+                The <code>&lt;address&gt;</code> HTML element indicates that the enclosing HTML contains contact
+                information for a
+                person, group, or organization. An <code>&lt;address&gt;</code> element can provide contact information
+                in various
+                formats, including physical addresses, URLs, email addresses, phone numbers, social media handles, and
+                geographic coordinates, depending on the context. The <code>&lt;address&gt;</code> element should
+                include the name of
+                the person(s) or organization to which the contact information pertains.
+            </p>
+            <p>
+                The Comment interface represents textual notations within markup; while not visually shown, such
+                comments can be viewed in the source view. Comments are represented in HTML and XML as content between
+                '<code>&lt;!--</code>' and '<code>--&gt;</code>'.
+            </p>
+        </section>
+        <section class="main-section" id="lists">
+            <header>
+                <h2>Lists</h2>
+            </header>
+            <p>
+                The <code>&lt;ol&gt;</code> HTML element indicates an ordered list of objects, usually displayed as a
+                numbered list.
+            </p>
+            <p>
+                The <code>&lt;li&gt;</code> HTML element represents an item in a list. It must be contained in a parent
+                element, such
+                as an ordered list (<code>&lt;ol&gt;</code>), an unordered list (<code>&lt;ul&gt;</code>), or a menu. In
+                menus and unordered
+                lists, list elements are typically shown using bullet points. Ordered lists are typically displayed with
+                an ascending counter to the left, such as a number or letter.
+            </p>
+            <p>
+                The <code>&lt;ul&gt;</code> HTML element indicates an unordered list of items, usually shown as a
+                bulleted list.
+            </p>
+            <p>
+                The <code>&lt;dl&gt;</code> HTML element indicates a description list. The element contains a list of
+                words
+                (specified with the <code>&lt;dt&gt;</code> element) and descriptions (supplied by
+                <code>&lt;dd&gt;</code> elements). This element
+                is commonly used to implement a glossary or display metadata (a set of key-value pairs).
+            </p>
+            <ul>
+                <li>
+                    The <code>&lt;dt&gt;</code> HTML element identifies a term in a description or definition list and
+                    must be used
+                    inside a <code>&lt;dl&gt;</code> element. It is often followed by a <code>&lt;dd&gt;</code> element;
+                    however, numerous
+                    <code>&lt;dt&gt;</code> elements in a row indicate several terms that are all specified by the
+                    immediate
+                    following <code>&lt;dd&gt;</code> element.
+                </li>
+                <li>
+                    The <code>&lt;dd&gt;</code> (Description Details) element includes the definition or related content
+                    for the word
+                    specified with <code>&lt;dt&gt;</code>.
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="links">
+            <header>
+                <h2>Links</h2>
+            </header>
+            <p>
+                The <code>&lt;a&gt;</code> HTML element (or anchor element) with its href attribute generates a
+                hyperlink to web
+                pages, files, email addresses, locations on the same page, or any other URL address.
+            </p>
+            <p>
+                The content of each <code>&lt;a&gt;</code> should indicate the link's destination. If the href attribute
+                is present,
+                pressing the enter key when focused on the <code>&lt;a&gt;</code> element activates it.
+            </p>
+            <p>
+                Absolute references always start with the protocol name. An absolute reference is the whole address of a
+                web page, as shown in the browser's address bar. Absolute references refer to another site on the
+                Internet. Even if your website moves (for example, from your PC to a web server somewhere on the
+                Internet), all absolute references will continue to work because they do not rely on the current page's
+                position for information.
+            </p>
+            <p>
+                When you have more than one page on your website, you employ relative references. Most websites are made
+                up of interconnected web pages rather than single pages. When you have a series of interconnected pages,
+                the relative reference comes in handy. There is no protocol or address at all, only a filename. Relative
+                references function by assuming the address of the current page. When the user clicks, the browser sees
+                no protocol and assumes that the html file is located in the same directory on the same server.
+            </p>
+            <p>
+                The <code>id</code> attribute defines a unique identifier (ID) which must be unique in the whole
+                document. Its
+                function is to identify the element when linking (by a fragment identifier), scripting, or styling (via
+                CSS).
+            </p>
+            <p>
+                The <code>&lt;nav&gt;</code> HTML element is a portion of a page that provides navigation links, either
+                within or to
+                other documents. Menus, tables of contents, and indexes are common types of navigation sections.
+            </p>
+            <p>
+                The <code>download</code> attribute tells the browser to treat the linked URL as a download.
+            </p>
+            <p>
+                The <code>mailto:</code> scheme can be used to build links that open the user's email software and allow
+                them to send
+                a new message.
+            </p>
+            <p>
+                The <code>tel</code> attribute connection behavior varies according to device capabilities:
+            </p>
+            <ul>
+                <li>
+                    Cellular devices will dial the number automatically.
+                </li>
+                <li>
+                    Most operating systems provide programs for making calls, such as Skype or FaceTime.
+                </li>
+                <li>
+                    registerProtocolHandler allows websites to make phone calls, such as web.skype.com.
+                </li>
+                <li>
+                    Other activities include adding the number to contacts or transferring it to another device.
+                </li>
+            </ul>
+            <p>
+                Links that open in a new tab/window with <code>target="_blank"</code> or that point to a download file
+                should specify
+                what happens when the link is clicked.
+            </p>
+        </section>
+        <section class="main-section" id="images">
+            <header>
+                <h2>Images</h2>
+            </header>
+            <p>
+                The <code>&lt;img&gt;</code> HTML element embeds an image in the content.
+            </p>
+            <ul>
+                <li>
+                    The <code>src</code> attribute is required, and contains the path to the image you want to embed.
+                </li>
+                <li>
+                    The <code>alt</code> attribute holds a textual replacement for the image, which is mandatory and
+                    incredibly
+                    useful for accessibility — screen readers read the attribute value out to their users so they know
+                    what the image means. If the image cannot be loaded for any reason, such as network difficulties,
+                    content blocking, or linkrot, alt text is displayed on the page instead.
+                </li>
+                <li>
+                    To prevent content layout shifts, set the image's intrinsic size by using both <code>width</code>
+                    and <code>height</code>
+                    attributes.
+                </li>
+                <li>
+                    The <code>alt</code> attribute defines text that can be used to substitute an image on a webpage.
+                </li>
+                <li>
+                    The <code>loading</code> attribute specifies how the browser should load the image. The eager value
+                    loads the
+                    picture immediately, regardless of whether it is currently visible in the viewport (default value).
+                    The lazy value delays loading the image until it reaches a calculated distance from the viewport, as
+                    specified by the browser. The goal is to avoid using network and storage bandwidth to handle the
+                    image until it is relatively likely that it will be required. This generally enhances the content's
+                    performance in most common usage situations.
+
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;figure&gt;</code> HTML element indicates self-contained content, which may include an
+                optional caption
+                given with the <code>&lt;figcaption&gt;</code> element. The figure, caption, and contents are all
+                referenced as one
+                unit.
+            </p>
+            <p>
+                The <code>&lt;figcaption&gt;</code> HTML element adds a caption or legend to the
+                <code>&lt;figure&gt;</code> element, making the
+                content more accessible.
+            </p>
+        </section>
+        <section class="main-section" id="semantics">
+            <header>
+                <h2>Semantics</h2>
+            </header>
+            <p>
+                In HTML, for example, the <code>h1</code> element is a semantic element that assigns the text it wraps
+                around the
+                role (or meaning) of "a top level heading on your page."
+            </p>
+            <p>
+                By default, most browsers' user agent stylesheets will style a h1 with a large font size to resemble a
+                heading (but you can design it to appear like anything).
+            </p>
+            <p>
+                On the other hand, you can use <code>&lt;span&gt;</code> to make any element appear as a top level
+                heading. This will
+                make it look like a top-level heading, but it has no semantic value, so it will not receive any of the
+                benefits indicated above. As a result, it is recommended that you use the appropriate HTML element for
+                the task at hand.
+            </p>
+            <p>
+                These are some of the roughly 100 semantic elements available:
+            </p>
+            <ul>
+                <li><code>&lt;article&gt;</code></li>
+                <li><code>&lt;aside&gt;</code></li>
+                <li><code>&lt;details&gt;</code></li>
+                <li><code>&lt;figcaption&gt;</code></li>
+                <li><code>&lt;figure&gt;</code></li>
+                <li><code>&lt;footer&gt;</code></li>
+                <li><code>&lt;form&gt;</code></li>
+                <li><code>&lt;header&gt;</code></li>
+                <li><code>&lt;main&gt;</code></li>
+                <li><code>&lt;mark&gt;</code></li>
+                <li><code>&lt;nav&gt;</code></li>
+                <li><code>&lt;section&gt;</code></li>
+                <li><code>&lt;summary&gt;</code></li>
+                <li><code>&lt;time&gt;</code></li>
+            </ul>
+            <p>
+                The <code>&lt;header&gt;</code> HTML element represents introductory text, such as navigational aids. It
+                may have
+                certain heading components, as well as a logo, a search form, the author's name, and other things. It
+                can define a global site header, often known as a banner in the accessibility tree. It typically
+                comprises a logo, firm name, a search function, and potentially worldwide navigation or a motto. It is
+                typically seen at the top of the page.
+            </p>
+            <p>
+                The <code>&lt;main&gt;</code> HTML element represents a document's primary material in the
+                <code>&lt;body&gt;</code> section. The
+                primary content area includes content that is directly related to or expands on the central topic of a
+                document or the central feature of an application. The content of the <code>&lt;main&gt;</code> element
+                should be
+                unique to the document. Sidebars, navigation links, copyright information, site logos, and search forms
+                are examples of content that should not be provided unless the search form is the primary function of
+                the page.
+            </p>
+            <p>
+                The <code>&lt;footer&gt;</code> HTML element creates a footer for the ancestor sectioning content or
+                root element. A
+                <code>&lt;footer&gt;</code> often includes author information, copyright data, and links to relevant
+                papers.
+            </p>
+            <p>
+                The <code>&lt;article&gt;</code> HTML element refers to a self-contained composition in a document,
+                page,
+                application, or site that can be independently distributed or reused (e.g., in syndication). A forum
+                post, a magazine or newspaper article, a blog entry, a product card, a user-submitted comment, an
+                interactive widget or gadget, or any other piece of content that stands alone.
+            </p>
+            <p>
+                The <code>&lt;section&gt;</code> HTML element represents a general independent portion of a document
+                without a
+                specific semantic element to represent it. Sections should always have a heading, with very few
+                exceptions. Using <code>&lt;section&gt;</code> without a heading is more common in web application/UI
+                sections than
+                in traditional document structures. It makes no sense to have a separate part of material in a document
+                if there is no heading to describe its contents. like headlines are beneficial to all readers, but
+                especially to those who use assistive technologies like as screen readers, and they also help with SEO.
+            </p>
+            <p>
+                The <code>&lt;aside&gt;</code> HTML element denotes a section of a document whose content is only
+                indirectly related
+                to the main content. Asides are often presented as sidebars or call-out boxes.
+            </p>
+            <ul>
+                <li>
+                    The <code>&lt;details&gt;</code> HTML element generates a disclosure widget that displays
+                    information only when
+                    toggled into the "open" state. To offer a summary or label, use the <code>&lt;summary&gt;</code>
+                    element. A
+                    disclosure widget is often displayed onscreen as a little triangle that spins (or twists) to
+                    indicate open/closed status, along with a label next to it. The disclosure widget's label is based
+                    on the contents of the <code>&lt;summary&gt;</code> element. The <code>&lt;details&gt;</code>
+                    section provides an
+                    understandable description for the <code>&lt;summary&gt;</code>.
+                </li>
+                <li>
+                    The <code>&lt;summary&gt;</code> HTML element adds a summary, caption, or legend to a
+                    <code>&lt;details&gt;</code> element's
+                    disclosure box. Clicking the <code>&lt;summary&gt;</code> element changes the state of the parent
+                    <code>&lt;details&gt;</code>
+                    element from open to closed.
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;mark&gt;</code> HTML element marks or highlights text for reference or notation based on
+                its relevance
+                in the context.
+            </p>
+            <p>
+                The <code>&lt;time&gt;</code> HTML element denotes a certain time interval. It may have the datetime
+                element, which
+                converts dates into machine-readable format, allowing for improved search engine results or custom
+                functionality like reminders.
+            </p>
+        </section>
+        <section class="main-section" id="tables">
+            <header>
+                <h2>Tables</h2>
+            </header>
+            <p>
+                The <code>&lt;table&gt;</code> HTML element represents tabular data, which is presented in a
+                two-dimensional table
+                with rows and columns of cells.
+            </p>
+            <ul>
+                <li>
+                    The <code>&lt;tr&gt;</code> HTML element specifies a row of cells in a table. To create the row's
+                    cells, combine
+                    <code>&lt;td&gt;</code> (data cell) and <code>&lt;th&gt;</code> (header cell) components.
+                </li>
+                <li>
+                    The <code>&lt;td&gt;</code> HTML element represents a table cell with data and can be a child of the
+                    <code>&lt;tr&gt;</code>
+                    element.
+                </li>
+                <li>
+                    The <code>&lt;th&gt;</code> HTML element serves as the header for a set of table cells and can be a
+                    child of the
+                    <code>&lt;tr&gt;</code> element. The scope and headers attributes specify the exact nature of this
+                    group.
+                </li>
+                <li>
+                    The colspan attribute specifies the number of columns the data cell spans. It is a non-negative
+                    integer. The rowspan attribute is a non-negative integer number that shows how many rows the data
+                    cell stretches.
+                </li>
+            </ul>
+            <h3>
+                Table Semantic Tags
+            </h3>
+            <ul>
+                <li>
+                    The <code>&lt;caption&gt;</code> HTML element specifies the caption (or title) of a table, giving it
+                    an
+                    accessible description. Providing a <code>&lt;caption&gt;</code> element with a clear and succinct
+                    description of
+                    the table's purpose helps users decide whether to read the rest of the content or skip it. This
+                    assists persons navigating using assistive technology such as a screen reader, people experiencing
+                    low vision issues, and people with cognitive concerns.
+                </li>
+                <li>
+                    The <code>&lt;thead&gt;</code> HTML element contains a series of table rows (<code>&lt;tr&gt;</code>
+                    elements), indicating
+                    that they are the head of a table with information about the table's columns. Column headers
+                    (<code>&lt;th&gt;</code> elements) are common examples of this. The <code>&lt;tbody&gt;</code> HTML
+                    element contains a set of
+                    table rows (<code>&lt;tr&gt;</code> components) that make up the core data of a table. The
+                    <code>&lt;tfoot&gt;</code> HTML
+                    element encapsulates a series of table rows (<code>&lt;tr&gt;</code> components) that comprise the
+                    foot of a
+                    table and contain information about the table's columns. This is frequently a summary of the
+                    columns, such as the sum of the numbers in a certain column. The <code>&lt;thead&gt;</code> element,
+                    like its
+                    related
+                    <code>&lt;tbody&gt;</code> and <code>&lt;tfoot&gt;</code> components, contains useful semantic
+                    information that can be used
+                    when rendering for both screen and print. Specifying such table content categories also provides
+                    contextual information to assistive technology like screen readers and search engines.
+                </li>
+                <li>
+                    The scope attribute specifies the cells that the header (specified in the <code>&lt;th&gt;</code>)
+                    element refers
+                    to. If the scope attribute is not supplied, or if its value is not row, col, rowgroup, or colgroup,
+                    browsers will select the set of cells to which the header cell applies.
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="forms">
+            <header>
+                <h2>Forms and Inputs</h2>
+            </header>
+            <p>
+                The <code>&lt;form&gt;</code> HTML element provides a document section with interactive controls for
+                inputting
+                information. The action property specifies the URL that will handle the form submission. A formaction
+                attribute can override this value on a <code>&lt;button&gt;</code>,
+                <code>&lt;input type="submit"&gt;</code>, or <code>&lt;input type="image"&gt;</code> element. This
+                attribute is ignored when method="dialog" is used.
+            </p>
+            <p>
+                The method attribute specifies the HTTP method for submitting the form. The common valid methods/values
+                are (case insensitive):
+            </p>
+            <ul>
+                <li>
+                    post: The POST method sends form data as the request body.
+                </li>
+                <li>
+                    get (default): The GET form data is appended to the action URL with a ? separator. Use this method
+                    when the form has no negative consequences.
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;label&gt;</code> HTML element serves as a caption for an item in a user interface. To link
+                a
+                <code>&lt;label&gt;</code> element to a <code>&lt;input&gt;</code> element, add the id property to the
+                <code>&lt;input&gt;</code> element.
+                Next, add the for attribute to the <code>&lt;label&gt;</code> element, with the same value as the id in
+                the
+                <code>&lt;input&gt;</code> element.
+            </p>
+            <p>
+                The <code>&lt;input&gt;</code> HTML element creates interactive controls for web-based forms to accept
+                user data.
+                Various types of input data and control widgets are accessible, depending on the device and user agent.
+                The <code>&lt;input&gt;</code> element is one of the most powerful and complex in HTML due to the
+                numerous
+                combinations of input types and attributes.
+            </p>
+            <p>
+                The functionality of a <code>&lt;input&gt;</code> differs based on its type property, hence each type is
+                addressed in
+                its own reference page. If this attribute is not given, the default type used is text. Some of the
+                available types are listed below:
+            </p>
+            <ul>
+                <li>
+                    <code>text</code>: The default value. A one-line text box. Line breaks are automatically removed
+                    from the input
+                    value.
+                </li>
+                <li>
+                    <code>password</code>: allows the user to safely input a password The element appears as a one-line
+                    plain text
+                    editor control with the text masked such that it cannot be read, typically by replacing each
+                    character with a symbol like as an asterisk ("*") or a dot ("•"). This character will vary according
+                    on the user agent and operating system.
+                </li>
+                <li>
+                    <code>tel</code>: a control for entering a phone number. In certain devices with dynamic keypads, a
+                    telephone
+                    keypad is displayed.
+                </li>
+                <li>
+                    <code>number</code>: a control for entering numbers. Displays a spinner and includes default
+                    validation. In some
+                    dynamic keypad-equipped gadgets, a numeric keypad is displayed.
+                </li>
+                <li>
+                    <code>radio</code>: are commonly used in radio groups, which are collections of radio buttons that
+                    describe a
+                    set of linked possibilities. Only one radio button from each group can be selected at the same time.
+                    Radio buttons are often represented as little circles that are filled or highlighted when selected.
+                    A radio group is defined by giving all of the radio buttons in the group the same name. When a radio
+                    group is created, selecting any radio button in that group instantly deselects any other radio
+                    buttons in the same group that are already chosen.
+                    You can have as many radio groups on a page as you want, as long as each has its own distinct name.
+                </li>
+                <li>
+                    <code>checkbox</code>: are shown by default as boxes that are checked (ticked) when engaged, similar
+                    to what you
+                    would see on an official government paper form. The actual appearance is determined by the operating
+                    system configuration under which the browser is running. This is generally a square, however the
+                    corners may be rounded. A checkbox allows you to choose individual values for submission in a form
+                    (or not). The value attribute is a string that represents the value of the checkbox. This is not
+                    visible on the client-side, but on the server, it is the value assigned to the data entered with the
+                    checkbox name.
+                </li>
+                <li>
+                    <code>email</code>: A field for entering an email address. It appears to be a text input, but it
+                    includes
+                    validation criteria and an appropriate keyboard to enable browsers and devices with dynamic
+                    keyboards.
+                </li>
+            </ul>
+            <h3>Notable Input Attributes</h3>
+            <ul>
+                <li>
+                    The <code>placeholder</code> attribute is a string that gives the user a brief suggestion about what
+                    type of
+                    information is anticipated in the field. It should be a word or a short sentence that displays the
+                    expected type of data, rather than an explanation. The text must not contain carriage returns or
+                    line
+                    feeds.
+                </li>
+                <li>
+                    The <code>autocomplete</code> attribute accepts a space-separated text that specifies what type of
+                    autocomplete
+                    capabilities the input should give. A common implementation of autocomplete retrieves past values
+                    typed
+                    in the same input field; however, more advanced versions of autocomplete exist. For example, a
+                    browser
+                    may work with a device's contacts list to autocomplete email addresses in an email input field.
+                </li>
+                <li>
+                    The <code>required</code> attribute is a Boolean property that, when present, indicates that the
+                    user must enter
+                    a
+                    value for the input before the form can be submitted.
+                </li>
+                <li>
+                    The <code>autofocus</code> is a Boolean attribute that, if present, signals that the input should
+                    automatically
+                    have focus when the page has finished loading. Only one element in the document may contain the
+                    autofocus attribute. If the attribute is applied to more than one element, the first element having
+                    the attribute is given priority. The autofocus attribute cannot be used on <code>hidden</code>
+                    inputs because
+                    they cannot be focused. When using the autofocus attribute, take care to ensure accessibility.
+                    Automatically focusing on a control can cause the page to scroll upon load. Some touch devices may
+                    also show dynamic keyboards as a result of the emphasis. While a screen reader will announce the
+                    label of the form control that has received focus, it will not declare anything prior to the label,
+                    and a sighted user on a small device will also miss the context produced by the previous content.
+                </li>
+                <li>
+                    When the <code>pattern</code> attribute is given, the input's value must match the regular
+                    expression in order to
+                    pass constraint validation. It must be a valid JavaScript regular expression, as defined by the
+                    <code>RegExp</code> type and documented in our regular expressions reference; when compiling the
+                    regular
+                    expression, the 'u' flag is supplied to treat the pattern as a series of Unicode code points rather
+                    than ASCII. No forward slashes should be used around the pattern text. If the requested pattern is
+                    not provided or is invalid, no regular expression is used, and this attribute is completely
+                    disregarded.
+                </li>
+                <li>
+                    The <code>min</code> attribute specifies the minimal value that will be accepted for this input. If
+                    the element's
+                    value is less than this, it fails constraint validation. If min is specified as an invalid number,
+                    the input has no minimum value. This value must be less than or equal to the value of the max
+                    attribute.
+                </li>
+                <li>
+                    The <code>max</code> attribute specifies the maximum value to accept for this input. If the value
+                    entered into
+                    the element exceeds this limit, it fails constraint validation. If the max attribute's value is not
+                    a number, the element has no maximum value. This value must be greater than or equal to the value of
+                    the min attribute.
+                </li>
+                <li>
+                    The <code>step</code> attribute is a number that determines the level of granularity to which the
+                    value must
+                    comply, or any custom value, as defined below. Only values equivalent to the foundation for stepping
+                    are valid.
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;select&gt;</code> HTML element creates a control with a menu of options.
+            </p>
+            <ul>
+                <li>
+                    The <code>&lt;option&gt;</code> HTML element specifies an item within a <code>&lt;select&gt;</code>,
+                    <code>&lt;optgroup&gt;</code>, or
+                    <code>&lt;datalist&gt;</code> element. <code>&lt;option&gt;</code> can be used to represent menu
+                    items in popups and lists in
+                    HTML documents.
+                </li>
+                <li>
+                    The <code>&lt;optgroup&gt;</code> HTML element groups choices within the <code>&lt;select&gt;</code>
+                    element.
+                </li>
+            </ul>
+            <h3>Notable Select Attributes</h3>
+            <ul>
+                <li>
+                    The <code>multiple</code> attribute, which is a Boolean, specifies that numerous alternatives from
+                    the list can
+                    be picked. If it is not mentioned, only one option may be chosen at a time. When numerous options
+                    are supplied, most browsers display a scrolling list box rather than a single-line dropdown.
+                </li>
+                <li>
+                    The <code>size</code> attribute: If the control is displayed as a scrolling list box (for example,
+                    when many is
+                    supplied), this attribute indicates how many rows in the list should be seen at once. Browsers are
+                    not needed to display a choose element as a scrollable list box. The default value is zero.
+                </li>
+            </ul>
+            <h3>Notable Option Attributes</h3>
+            <ul>
+                <li>
+                    The <code>value</code> attribute's content represents the value that will be sent with the form if
+                    this option is
+                    selected. If this attribute is absent, the value is taken from the option element's text content.
+                </li>
+                <li>
+                    The <code>selected</code> attribute, which is a Boolean, indicates that the option is initially
+                    selected. If the
+                    <code>&lt;option&gt;</code> element is a descendant of a <code>&lt;select&gt;</code> element without
+                    multiple attributes, only
+                    one <code>&lt;option&gt;</code> of this <code>&lt;select&gt;</code> element can have the selected
+                    attribute.
+                </li>
+            </ul>
+            <h3>Noteable Optgroup Attributes</h3>
+            <ul>
+                <li>
+                    The <code>label</code> attribute specifies the name of the set of options that the browser can use
+                    to label the
+                    options in the user interface. This attribute is required if the element is utilized.
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;datalist&gt;</code> HTML element has a set of <code>&lt;option&gt;</code> elements that
+                reflect the permissible or
+                recommended options to choose from within other controls. To bind the <code>&lt;datalist&gt;</code>
+                element to the
+                control, give it a unique identifier in the id attribute. Then, add the list attribute to the
+                <code>&lt;input&gt;</code> element with the same identification as value. This functionality is only
+                supported by
+                certain types of <code>&lt;input&gt;</code> and may vary between browsers.
+            </p>
+            <p>
+                The <code>&lt;fieldset&gt;</code> element groups a section of an HTML form and is accompanied by a
+                nested
+                <code>&lt;legend&gt;</code> element that serves as its caption. It accepts few attributes, the most
+                important of
+                which are form, which can contain the id of a <code>&lt;form&gt;</code> on the same page, allowing you
+                to make the
+                <code>&lt;fieldset&gt;</code> part of that <code>&lt;form&gt;</code> even if it is not nested inside it,
+                and disabled, which
+                allows you to deactivate the <code>&lt;fieldset&gt;</code> and all its contents at once.
+            </p>
+            <ul>
+                <li>
+                    The <code>&lt;legend&gt;</code> HTML element provides a caption for the content of the parent
+                    <code>&lt;fieldset&gt;</code>.
+                </li>
+            </ul>
+            <p>
+                The <code>&lt;textarea&gt;</code> HTML element is excellent for allowing users to enter large amounts of
+                free-form
+                text, such as comments on a review or feedback form. To improve accessibility, the
+                <code>&lt;textarea&gt;</code> can
+                be linked to a <code>&lt;label&gt;</code> element using an id property. The name attribute specifies the
+                name of the
+                associated data point that is sent to the server when the form is submitted. The rows and cols
+                attributes allow you to select the exact size for the <code>&lt;textarea&gt;</code>. Setting these is a
+                good idea for
+                uniformity, as browser defaults vary.
+            </p>
+            <p>
+                The <code>&lt;button&gt;</code> HTML element is an interactive element that a user can activate using a
+                mouse,
+                keyboard, finger, voice command, or other assistive technology. Once engaged, it takes a certain action,
+                such as submitting a form or starting a conversation.
+            </p>
+            <h3>Types of a Button for Forms</h3>
+            <ul>
+                <li>
+                    submit: This button sends the form data to the server. This is the default if the property is not
+                    supplied for buttons connected with a <code>&lt;form&gt;</code>, or if the value is empty or
+                    invalid.
+                </li>
+                <li>
+                    reset: The button resets all controls to their original values, such as
+                    <code>&lt;input type="reset"&gt;</code>.
+                </li>
+            </ul>
+            <h3>Notable Attributes for Submit Button</h3>
+            <ul>
+                <li>
+                    The formaction attribute contains the URL for processing the information submitted by the button.
+                    This overrides the action attribute set by the button's form owner. However, it has no effect if the
+                    form does not have an owner.
+                </li>
+                <li>
+                    If the button is a submit button (connected with a <code>&lt;form&gt;</code> and not
+                    <code>type="button"</code>),
+                    this
+                    attribute defines the HTTP method used to submit the form.
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <h2>Sources:</h2>
+            <ul>
+                <li>
+                    <cite>
+                        <a href="https://www.youtube.com/watch?v=mJgBOIoGihA">
+                            Dave Gray's HTML Full Course for Beginners Video
+                        </a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/">
+                            MDN Web Docs
+                        </a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a
+                            href="https://www.dummies.com/article/technology/programming-web-design/html5/absolute-and-relative-references-for-html5-and-css3-programming-157200/">
+                            Absolute and Relative References for HTML5 and CSS3 Programming
+                        </a>
+                    </cite>
+                </li>
+            </ul>
+        </footer>
+    </main>
+
+</body>
+
+</html>
