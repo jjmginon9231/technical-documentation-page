@@ -1,64 +1,72 @@
 # Technical Documentation Page
 
-This technical documentation page is based on the freeCodeCamp Responsive Web Design's Technical Documentation Page Certification Project. It provides information about HTML and CSS concepts, covering essential topics such as semantic HTML tags, CSS selectors, typography, responsive web design, custom variables, and organizing CSS.
+This technical documentation page is modeled after the freeCodeCamp Responsive Web Design Technical Documentation Page Certification Project. This technical documentation page covers key HTML concepts and serves as a reference guide. It is based on Dave Gray's "HTML for Beginners" Full Course, with MDN Docs serving as the major resource. This website was designed using HTML and CSS best practices, including Semantic HTML tags, proper CSS Selectors, Typography, and Responsive Web Design.
 
 ## Table of Contents
 
 1. Introduction
 2. HTML Basics
-3. CSS Essentials
-4. Responsive Design
-5. Custom Variables
-6. Organizing CSS
-7. Additional Resources
+3. HTML Elements
+4. Document Structure
+5. Semantic HTML
+6. Forms
+7. Tables
+8. Images and Multimedia
+9. Links and Navigation
+10. Best Practices
 
 ## Introduction
 
-Welcome to our technical documentation page! Here, you'll find detailed explanations and examples related to web development using HTML and CSS. Whether you're a beginner or an experienced developer, this guide will help you enhance your skills.
+HTML (Hypertext Markup Language) is the standard language for creating web pages. It defines the structure and content of a webpage using tags and elements.
 
 ## HTML Basics
 
-### Semantic HTML Tags
+- Understanding the DOCTYPE declaration
+- Creating an HTML document with `<html>`, `<head>`, and `<body>`
+- Adding metadata with `<meta>` tags
 
-Semantic HTML tags provide meaning to the structure of your web content. Some important tags include:
+## HTML Elements
 
-- `<header>`: Represents the header section of a webpage.
-- `<nav>`: Defines navigation links.
-- `<main>`: Contains the main content of the page.
-- `<section>`: Represents a thematic grouping of content.
-- `<article>`: Contains independent, self-contained content.
+- Commonly used elements: `<h1>`, `<p>`, `<ul>`, `<ol>`, `<li>`, etc.
+- Inline vs. block-level elements
+- Nesting elements
 
-## CSS Essentials
+## Document Structure
 
-### CSS Selectors
+- Organizing content with headings (`<h1>` to `<h6>`)
+- Creating paragraphs and line breaks
+- Using comments (`<!-- ... -->`) for clarity
 
-CSS selectors allow you to target specific HTML elements for styling. Common selectors include:
+## Semantic HTML
 
-- `element`: Selects all instances of a specific HTML element.
-- `.class`: Targets elements with a specific class.
-- `#id`: Selects an element with a specific ID.
+- Importance of semantic tags (e.g., `<header>`, `<nav>`, `<main>`, `<footer>`)
+- Enhancing accessibility with semantic elements
 
-### Typography
+## Forms
 
-Learn how to style text using CSS properties such as `font-family`, `font-size`, `font-weight`, and `line-height`. Good typography enhances readability and user experience.
+- Building forms with `<form>`, `<input>`, `<label>`, and other form elements
+- Handling user input and validation
 
-## Responsive Design
+## Tables
 
-### Media Queries
+- Creating tables using `<table>`, `<tr>`, `<th>`, and `<td>`
+- Adding captions and headers
 
-Create responsive layouts using media queries. Adjust your styles based on screen size, ensuring your website looks great on various devices.
+## Images and Multimedia
 
-## Custom Variables
+- Embedding images with `<img>`
+- Including audio and video content
 
-### CSS Variables (Custom Properties)
+## Links and Navigation
 
-Define reusable values using custom variables. These variables can be used throughout your CSS to maintain consistency and make updates easier.
+- Creating hyperlinks with `<a>`
+- Navigating within the same page using anchor links (`<a href="#section-id">`)
 
-## Organizing CSS
+## Best Practices
 
-### File Structure
-
-Organize your CSS files by creating separate files for different components. Use a consistent naming convention and directory structure.
+- Validating HTML using W3C validators
+- Writing clean, maintainable code
+- Using semantic elements appropriately
 
 ## Additional Resources
 - [freeCodeCamp](https://www.freecodecamp.org/): A fantastic platform for learning web development. Their interactive coding challenges and certifications are invaluable.
