@@ -73,4 +73,7 @@ HTML (Hypertext Markup Language) is the standard language for creating web pages
 - [MDN Web Docs](https://developer.mozilla.org/en-US/): A comprehensive resource for web development.
 - [Dave Gray](https://github.com/gitdagray)'s [HTML](https://youtu.be/mJgBOIoGihA?si=sj-cuMSOkdLpMpq7) and [CSS](https://youtu.be/n4R2E7O-Ngo?si=8x9JHE1dRqiU_6S_) Courses: the best practices from Dave Gray's courses covering in-depth HTML and CSS.
 
-Feel free to explore the links and dive deeper into each topic. Happy coding! 🚀
+## Contact
+Feel free to reach out for collaborations or work opportunities.
+
+[LinkedIn](https://www.linkedin.com/in/john-jerry-ginon-0b5539314/) | [GitHub](https://github.com/jjmginon9231/) | [Upwork](https://www.upwork.com/freelancers/~01432eb5f90e315e15?mp_source=share)
