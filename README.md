@@ -1,5 +1,7 @@
 # Technical Documentation Page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e2fea00-18ab-4612-95e7-27f3e28f5b08/deploy-status)](https://app.netlify.com/sites/technical-documentation-page-2024/deploys)
+
 This technical documentation page is modeled after the freeCodeCamp Responsive Web Design Technical Documentation Page Certification Project. This technical documentation page covers key HTML concepts and serves as a reference guide. It is based on Dave Gray's "HTML for Beginners" Full Course, with MDN Docs serving as the major resource. This website was designed using HTML and CSS best practices, including Semantic HTML tags, proper CSS Selectors, Typography, and Responsive Web Design.
 
 ## Table of Contents
@@ -69,11 +71,13 @@ HTML (Hypertext Markup Language) is the standard language for creating web pages
 - Using semantic elements appropriately
 
 ## Additional Resources
+
 - [freeCodeCamp](https://www.freecodecamp.org/): A fantastic platform for learning web development. Their interactive coding challenges and certifications are invaluable.
 - [MDN Web Docs](https://developer.mozilla.org/en-US/): A comprehensive resource for web development.
 - [Dave Gray](https://github.com/gitdagray)'s [HTML](https://youtu.be/mJgBOIoGihA?si=sj-cuMSOkdLpMpq7) and [CSS](https://youtu.be/n4R2E7O-Ngo?si=8x9JHE1dRqiU_6S_) Courses: the best practices from Dave Gray's courses covering in-depth HTML and CSS.
 
 ## Contact
+
 Feel free to reach out for collaborations or work opportunities.
 
 [LinkedIn](https://www.linkedin.com/in/john-jerry-ginon-0b5539314/) | [GitHub](https://github.com/jjmginon9231/) | [Upwork](https://www.upwork.com/freelancers/~01432eb5f90e315e15?mp_source=share)
